@@ -1,0 +1,24 @@
+yum install java-17-amazon-corretto -v
+java --version
+yum update
+yum update -y
+wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-stable/jenkins.repo
+cd /etc/yum.repos.d/
+ls
+rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+yum upgrade
+yum install jenkins
+jenkins --version
+systemctl start jenkins.service 
+systemctl statatus jenkins-service
+systemctl status jenkins
+systemctl status jenkins
+systemctl status jenkins-service
+systemctl start jenkins.service 
+jenkins --version
+systemctl start jenkins.service 
+systemctl status jenkins.service 
+yum install jenkins -y
+systemctl start jenkins.service 
+systemctl status jenkins.service 
+cat /var/lib/jenkins/secrets/initialAdminPassword
